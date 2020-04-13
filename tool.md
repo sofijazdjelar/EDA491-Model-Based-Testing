@@ -26,13 +26,21 @@ Cucumber is written in Ruby and the tool is confirmed to work on Windows, OSX an
 **First release date:** July 25, 2009.
 
 ## Licensing / Cost
-MIT License / Free (not including CucumberStudio and Cucumber for Jira)
+MIT License / Free (not including CucumberStudio and Cucumber for Jira).
 
 ## Tutorials and documentation
 * Documentation: The official documentation is available 
 [here](http://lcamtuf.coredump.cx/afl/QuickStartGuide.txt)
 
 ## Usage examples
-
+```
+Scenario: Emil wants to withdraw money from his bank account at an ATM
+    Given Emil has a valid Credit or Debit card
+    And his account balance is $1000
+    When he inserts his card
+    And withdraws $450
+    Then the ATM should return $450
+    And his account balance is $550
+```
 ## Alternative tools
 
