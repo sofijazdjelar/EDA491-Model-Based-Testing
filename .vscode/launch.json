@@ -6,9 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Median",
+            "request": "launch",
+            "mainClass": "Median",
+            "projectName": "EDA491_98a2473b"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
             "vmArgs": "--enable-preview"
         },
         {
@@ -16,7 +23,8 @@
             "name": "Debug (Launch)-Higher<EDA491_98a2473b>",
             "request": "launch",
             "mainClass": "Higher",
-            "projectName": "EDA491_98a2473b"
+            "projectName": "EDA491_98a2473b",
+            "vmArgs": "--enable-preview"
         }
     ]
 }

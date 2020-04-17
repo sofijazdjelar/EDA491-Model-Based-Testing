@@ -16,16 +16,16 @@ public class Median {
         System.out.println("median is" + m);
     }
 
-    public static float median(float[] floatArray) {
-        if (floatArray.length == 1) {
-            return floatArray[0];
+    public static float median(float[] values) {
+        if (values.length == 1) {
+            return values[0];
         }
-        Arrays.sort(floatArray);
-        int middle = floatArray.length / 2;
-        if (floatArray.length == 1) {
-            return floatArray[0];
+        Arrays.sort(values);
+        int middle = values.length / 2;
+        if (values.length % 2 == 1) {
+            return values[middle];
         } else {
-            return floatArray[middle - 1] + floatArray[middle] / 2.0f;
+            return (values[middle - 1] + values[middle]) / 2.0f;
         }
     }
 
@@ -35,6 +35,31 @@ public class Median {
         testFloat = new float[1];
         testFloat[0] = (float) 1.0;
         assertEquals(1.0, median(testFloat));
+    }
+    @Test
+    public void testMedian2(){
+        float testFloat[];
+        testFloat = new float[2];
+        testFloat[0] = (float) (-1.0);
+        testFloat[1] = (float) (1.0);
+        assertEquals(0, median(testFloat));
+
+    }
+
+    @Test
+    public void testMedian3(){
+        float testFloat[];
+        testFloat = new float[0];
+        assertEquals(0, median(testFloat));
+    }
+    @Test
+    public void testMedian4(){
+        float testFloat[];
+        testFloat = new float[3];
+        testFloat[0] = (float) (3.12);
+        testFloat[1] = (float) (8.0);
+        testFloat[2] = (float) (6.3);
+        assertEquals(6.3, median(testFloat));
     }
 
 }

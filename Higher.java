@@ -19,8 +19,9 @@ public class Higher {
         }
     }
 
+
     @Test 
-    public void testHigher() {
-        assertEquals(20, higher(10, 20)); //We expect the method to return ...
+    public void testHigher() { 
+        assertEquals(20, higher(10, 20)); 
     }
 }
