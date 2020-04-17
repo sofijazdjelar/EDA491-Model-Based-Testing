@@ -10,7 +10,7 @@ PayPal was developed using many different programming languages. However, key la
 
 **Q2.3. What kind of automated testing tools are used to test the sw/lib (including but possible more than YTT) and what are their key features?**  
 PayPal uses the automated testing tools Selenium and TestNG. Moreover, they have developed automated testing tools of their own that utilizes Selenium and/or TestNG:   
-* [Nemojs](https://nemo.js.org/): PayPal’s own open source Node.js automation framework. More specifically, Nemojs provides a way to add Selenium automation to NodeJS web projects.
+* [Nemojs](https://nemo.js.org/): PayPal’s own open source Node.js automation framework. More specifically, Nemojs provides a way to add Selenium automation to NodeJS web projects.  
 * [SeLion](http://paypal.github.io/SeLion/html/documentation.html#what-is-selion): Enables Test Automation in Java. The tool uses TestNG and Selenium to provide a set of capabilities that get you up and running with Selenium WebDriver in a short time. It can be used for testing web and mobile applications.
 
 **Q2.4. Which features of the automated testing tools are currently used by the test suite?**   
