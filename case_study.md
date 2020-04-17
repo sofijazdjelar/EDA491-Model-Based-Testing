@@ -1,4 +1,5 @@
-## Part 2: Find a software/lib that uses the testing tool
+# Cucumber Case Study
+## Software that uses Cucumber
 PayPal has used Cucumber for business-driven development. 
 
 **Q2.1. What is the purpose of the sw/lib, i.e. what does it aim to do for users/developers?**\
@@ -18,7 +19,7 @@ As mentioned above, they use different automated testing tools and only refer to
 **Q2.5. Which features of the automated testing tools are NOT used by the test suite?**   
 They do not explicitly refer to the features not used by the test suite. One cannot assume that a feature not mentioned is a feature not used. 
 
-## Part 3: Interview developers/testers of YTT  
+## Interview with the founder of Cucumber   
 I reached out to the founder of Cucumber - Aslak Hellesøy. He is currently working as Cucumber Open Source Lead at SmartBear which acquired Cucumber in 2019. 
 
 **Q3.1. What was your reasons for developing Cucumber? Which situations is it good for and less good for?**  
