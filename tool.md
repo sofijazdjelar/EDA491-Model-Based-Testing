@@ -9,6 +9,8 @@ Cucumber is an open source tool for creating automated acceptance tests. The too
 * Reusability: Cucumber allows you to reuse steps in other steps. This is especially useful when a step extends another step’s behavior.
 
 ## Pros
+* Easy to learn.
+* Enforces collaboration. 
 * Acts as a bridge between business and technical staff. 
 * Allows test cases to be written without knowledge of any code (allows the involvement of non-programmers).
 * Supports many different programming languages and software platforms. 
@@ -19,7 +21,16 @@ Cucumber is an open source tool for creating automated acceptance tests. The too
 * Adds another layer of complexity.
 
 ## Required information / models
-Using a set of keywords (e.g. Given, When and Then), the user specifies expected software behavior (derived from business requirements) in a so-called Feature File. The specifications consist of multiple examples, or scenarios. Each scenario is a list of steps for Cucumber to work through. When Cucumber executes a Gherkin step, it will look for a corresponding piece of code to execute in the Step Definition file. If there is an error or exception in any line of code inside the step definition, Cucumber will mark that in the result output and then move on to execute the next step. 
+Using a set of keywords (e.g. Given, When and Then), the user specifies expected software behavior (derived from business requirements) in a so-called Feature File. The specifications consist of multiple examples, or scenarios. Each scenario is a list of steps for Cucumber to work through. When Cucumber executes a Gherkin step, it will look for a corresponding piece of code to execute in the Step Definition file. If there is an error or exception in any line of code inside the step definition, Cucumber will mark that in the result output and then move on to execute the next step. Below is an example of a scenario in which a certain behavior of an ATM machine is specified. 
+```
+Scenario: Emil wants to withdraw money from his bank account at an ATM
+    Given Emil has a valid Credit or Debit card
+    And his account balance is $1000
+    When he inserts his card
+    And withdraws $450
+    Then the ATM should return $450
+    And his account balance is $550
+```
 
 ## Target platform and dependencies
 Cucumber is written in Ruby and the tool is confirmed to work on Windows, OSX and Linux. Moreover, Cucumber supports many different programming languages (including Java, JavaScript, PHP, Net, Python and Perl) and almost all popular software platforms. Components needed to make Cucumber work are Ruby and the Ruby DevKit.  
@@ -37,16 +48,8 @@ MIT License / Free (not including CucumberStudio and Cucumber for Jira).
 [here](https://cucumber.netlify.app/docs/cucumber/).
 
 ## Usage examples
-Below is a usage example of Cucumber in which a certain behavior of an ATM machine is specified. 
-```
-Scenario: Emil wants to withdraw money from his bank account at an ATM
-    Given Emil has a valid Credit or Debit card
-    And his account balance is $1000
-    When he inserts his card
-    And withdraws $450
-    Then the ATM should return $450
-    And his account balance is $550
-```
+Cucumber is used in companies worldwide, e.g. PayPal, Canon and the European Commission. 
+
 ## Alternative tools
 * [Robot Framework](https://robotframework.org/)
 * [JBehave](https://jbehave.org/)
