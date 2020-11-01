@@ -1,5 +1,5 @@
 # [Cucumber](http://cucumber.io)
-Cucumber is an open source tool for creating automated acceptance tests. The tool was designed to support behavior-driven development (BDD) - an agile software development process that focuses on collaborative work among stakeholders. For instance, BDD involves using natural language and concrete examples to specify expected software behavior in a way that all stakeholders can understand. Cucumber uses a natural language parser called Gherkin to define executable test cases in a BDD style.
+Cucumber is an open source tool for creating automated acceptance tests. The tool was designed to support behavior-driven development (BDD) - an agile software development process that focuses on collaborative work among stakeholders. For example, BDD involves using natural language and concrete examples to specify expected software behavior in a way that all stakeholders can understand. Cucumber uses a natural language parser called Gherkin to define executable test cases in a BDD style.
 
 ## Features
 * Gherkin: Defined as a domain-specific language, Gherkin has no other application than Cucumber. With its set of 16 keywords, the language is simple and can be adopted by everyone. 
