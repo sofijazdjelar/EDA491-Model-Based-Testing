@@ -20,7 +20,7 @@ As mentioned above, they use different automated testing tools and only refer to
 They do not explicitly refer to the features not used by the test suite. One cannot assume that a feature not mentioned is a feature not used. 
 
 ## Interview with the founder of Cucumber   
-I reached out to the founder of Cucumber - Aslak Hellesøy. He is currently working as Cucumber Open Source Lead at SmartBear which acquired Cucumber in 2019. 
+I reached out to the founder of Cucumber (Aslak Hellesøy). He is currently working as Cucumber Open Source Lead at SmartBear which acquired Cucumber in 2019. 
 
 **Q3.1. What was your reasons for developing Cucumber? Which situations is it good for and less good for?**  
 >"I created Cucumber around 2008 because I had a strong belief that the traditional way to specify software requirements was fundamentally broken. I had seen too many programmers writing software based on ambiguous and imprecise requirements documents that were handed to them by someone they had never spoken to. This led to a lot of rework and delays because the requirements were misunderstood.
